@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Gattermeyer | Dev Fullstack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <nav class="bg-gray-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
+        <div class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+            <div class="text-2xl font-bold text-indigo-500 underline decoration-2 underline-offset-8">AndréGatt.dev
+            </div>
+
+            <div class="space-x-8 hidden md:flex">
+                <a href="#sobre"
+                    class="hover:text-indigo-400 transition text-sm uppercase tracking-widest font-medium">Tecnologias</a>
+                <a href="#projetos"
+                    class="hover:text-indigo-400 transition text-sm uppercase tracking-widest font-medium">Projetos</a>
+                <a href="#contato"
+                    class="hover:text-indigo-400 transition text-sm uppercase tracking-widest font-medium">Contato</a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-gray-100 focus:outline-none z-50" aria-label="Abrir menu">
+                <i class="fas fa-bars text-2xl transition-all duration-300"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden absolute top-[110%] left-4 right-4 bg-gray-800/95 backdrop-blur-lg border border-gray-700 rounded-2xl shadow-2xl md:hidden overflow-hidden transform transition-all duration-300 origin-top scale-95 opacity-0">
+            <div class="flex flex-col items-center py-8 space-y-8">
+                <a href="#sobre"
+                    class="mobile-link text-lg uppercase tracking-[0.2em] font-bold text-gray-300">Tecnologias</a>
+                <a href="#projetos"
+                    class="mobile-link text-lg uppercase tracking-[0.2em] font-bold text-gray-300">Projetos</a>
+                <a href="#contato"
+                    class="mobile-link text-lg uppercase tracking-[0.2em] font-bold text-gray-300">Contato</a>
+                <a href="documentos/curriculo-andre.pdf" download class="text-indigo-400 uppercase tracking-widest font-bold pt-4">
+                    <i class="fas fa-file-download"></i> Currículo
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-6xl mx-auto py-16 md:py-24 px-6 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 text-center md:text-left order-2 md:order-1">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                Olá, eu sou <span class="text-indigo-500">André Gattermeyer</span>.
+            </h1>
+            <p class="text-xl text-gray-400 max-w-xl mb-8">
+                Desenvolvedor Fullstack especializado em arquiteturas escaláveis com Java/Spring e interfaces dinâmicas com Angular.
+            </p>
+            <div class="flex gap-4 justify-center md:justify-start">
+                <a href="#projetos"
+                    class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-indigo-500/20">Ver
+                    Projetos</a>
+                <a href="images/pdf/Currículo-André-Gattermeyer.pdf" download="Curriculo-Andre-Gattermeyer.pdf"
+                    class="border border-gray-600 hover:border-indigo-500 px-6 py-3 rounded-lg font-medium transition flex items-center gap-2">
+                    <i class="fas fa-file-download"></i> Baixar CV
+                </a>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center order-1 md:order-2">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000">
+                </div>
+                <div
+                    class="relative w-64 h-64 md:w-80 md:h-80 bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-700">
+                    <img src="/images/imagem-foto/foto-André.webp" alt="Foto de André Gattermeyer"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-16 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-10 text-gray-200 uppercase tracking-widest">Tecnologias</h2>
+            <div class="flex flex-wrap justify-center gap-10 text-gray-400">
+                <div class="flex flex-col items-center group w-20">
+                    <i class="fab fa-angular text-3xl group-hover:text-red-600 transition-colors"></i>
+                    <span class="text-xs mt-3 font-medium">Angular</span>
+                </div>
+                <div class="flex flex-col items-center group w-20">
+                    <i class="fab fa-java text-3xl group-hover:text-red-500 transition-colors"></i>
+                    <span class="text-xs mt-3 font-medium">Java</span>
+                </div>
+                <div class="flex flex-col items-center group w-20">
+                    <i class="fas fa-leaf text-3xl group-hover:text-green-500 transition-colors"></i>
+                    <span class="text-xs mt-3 font-medium">Spring Boot</span>
+                </div>
+                <div class="flex flex-col items-center group w-20">
+                    <i class="fab fa-js-square text-3xl group-hover:text-yellow-400 transition-colors"></i>
+                    <span class="text-xs mt-3 font-medium">JavaScript</span>
+                </div>
+                <div class="flex flex-col items-center group w-20">
+                    <i class="fab fa-git-alt text-3xl group-hover:text-orange-600 transition-colors"></i>
+                    <span class="text-xs mt-3 font-medium">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 border-l-4 border-indigo-500 pl-4 uppercase tracking-widest">Meus Projetos
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <div
+                class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 flex flex-col group shadow-lg">
+                <div class="relative h-48 w-full overflow-hidden bg-indigo-900/20 flex items-center justify-center">
+                    <i
+                        class="fas fa-car text-6xl text-indigo-500 opacity-40 group-hover:opacity-0 transition-opacity duration-500"></i>
+                    <img src="images/imagens-projetos/spring-angular-login/marcas.webp" alt="Preview Sistema de Veículos"
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-100 transition-all duration-500">
+
+                    <button onclick="openGallery([
+                    'images/imagens-projetos/spring-angular-login/login.webp', 
+                    'images/imagens-projetos/spring-angular-login/marcas.webp',
+                    'images/imagens-projetos/spring-angular-login/lista-carros.webp',
+                    'images/imagens-projetos/spring-angular-login/cadastrar carro.webp',
+                    'images/imagens-projetos/spring-angular-login/dto.webp',
+                    'images/imagens-projetos/spring-angular-login/jwt.webp'])"
+                        class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
+                        aria-label="Ver galeria de fotos">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full"><i class="fas fa-search-plus"></i></div>
+                    </button>
+                </div>
+                <div class="p-6 flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Sistema de Gestão de Veículos</h3>
+                    <p class="text-gray-400 text-sm mb-4">CRUD completo com Angular e Spring Boot, utilizando
+                        autenticação JWT.</p>
+                    <a href="https://github.com/andregattdev/cadastro-carros-angular-springboot"
+                        class="text-indigo-400 hover:text-indigo-300 text-sm font-bold flex items-center gap-2 uppercase tracking-tighter" target="_blank">Github
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div
+                class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 flex flex-col group shadow-lg">
+                <div class="relative h-48 w-full overflow-hidden bg-green-900/10 flex items-center justify-center">
+                    <i
+                        class="fas fa-clipboard-check text-6xl text-green-500 opacity-40 group-hover:opacity-0 transition-opacity duration-500"></i>
+
+                    <img src="images/imagens-projetos/spring-thymeleaf/foto-1.webp" alt="Preview Checklist"
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-100 transition-all duration-500">
+
+                    <button onclick="openGallery([
+            'images/imagens-projetos/spring-thymeleaf/foto-1.webp', 
+            'images/imagens-projetos/spring-thymeleaf/foto-2.webp', 
+            'images/imagens-projetos/spring-thymeleaf/foto-3.webp', 
+            'images/imagens-projetos/spring-thymeleaf/foto-4.webp'
+        ])" class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
+        aria-label="Ver galeria de fotos">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full shadow-lg">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="p-6 flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Checklist & Cadastro</h3>
+                    <p class="text-gray-400 text-sm mb-4">Monolito com Spring Boot e Thymeleaf focado em processos
+                        internos.</p>
+                    <a href="https://github.com/andregattdev/cadastro-de-veiculos-e-checklist-com-thymeleaf"
+                        class="text-indigo-400 hover:text-indigo-300 text-sm font-bold flex items-center gap-2 uppercase tracking-tighter"
+                        target="_blank">
+                        Github <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 flex flex-col group shadow-lg">
+                <div class="relative h-48 w-full overflow-hidden bg-gray-900 flex items-center justify-center">
+                    <i
+                        class="fas fa-user-shield text-6xl text-gray-600 opacity-40 group-hover:opacity-0 transition-opacity duration-500"></i>
+                    <img src="images/imagens-projetos/spring-login-jwt/foto-ide-controller.webp" alt="Preview API Auth"
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-100 transition-all duration-500">
+
+                    <button onclick="openGallery([
+                    
+                    'images/imagens-projetos/spring-login-jwt/foto-ide-controller.webp',
+                    'images/imagens-projetos/spring-login-jwt/foto-ide-service.webp',
+                    'images/imagens-projetos/spring-login-jwt/foto-list-all.webp',
+                    'images/imagens-projetos/spring-login-jwt/foto-login.webp',
+                    ])"
+                        class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
+                        aria-label="Ver galeria de fotos">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full"><i class="fas fa-search-plus"></i></div>
+                    </button>
+                </div>
+                <div class="p-6 flex-grow">
+                    <h3 class="text-xl font-bold mb-2">API Auth Security</h3>
+                    <p class="text-gray-400 text-sm mb-4">Microsserviço de autenticação robusto usando Spring Security e
+                        BCrypt.</p>
+                    <a href="https://github.com/andregattdev/api-login-jwt"
+                        class="text-indigo-400 hover:text-indigo-300 text-sm font-bold flex items-center gap-2 uppercase tracking-tighter"
+                        target="_blank">Github
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div
+                class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 flex flex-col group shadow-lg">
+                <div class="relative h-48 w-full overflow-hidden bg-red-900/10 flex items-center justify-center">
+                    <i
+                        class="fas fa-laptop-code text-6xl text-red-500 opacity-40 group-hover:opacity-0 transition-opacity duration-500"></i>
+                    <img src="images/imagens-projetos/landing-page-servico/inicio.webp" alt="Preview Landing Page"
+                        class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 scale-110 group-hover:scale-100 transition-all duration-500">
+
+                    <button onclick="openGallery([
+                    'images/imagens-projetos/landing-page-servico/inicio.webp', 
+                    'images/imagens-projetos/landing-page-servico/processos.webp',
+                    'images/imagens-projetos/landing-page-servico/solucoes.png',
+                    'images/imagens-projetos/landing-page-servico/precos.webp',
+                    'images/imagens-projetos/landing-page-servico/duvidas.webp',
+                    'images/imagens-projetos/landing-page-servico/contato.webp'
+                    ])"
+                        class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity"
+                        aria-label="Ver galeria de fotos">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full"><i class="fas fa-search-plus"></i></div>
+                    </button>
+                </div>
+                <div class="p-6 flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Landing Page Services</h3>
+                    <p class="text-gray-400 text-sm mb-4">Página institucional responsiva focada em UI/UX construída com
+                        Angular.</p>
+                    <a href="https://github.com/andregattdev/landing-page-servicos-angular"
+                        class="text-indigo-400 hover:text-indigo-300 text-sm font-bold flex items-center gap-2 uppercase tracking-tighter" target="_blank">Github
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contato" class="py-16 border-t border-gray-800 bg-gray-950 text-center">
+        <h2 class="text-3xl font-bold mb-8 uppercase tracking-widest text-gray-100">Vamos Conversar?</h2>
+        <div class="flex justify-center flex-wrap gap-10 text-3xl mb-10 text-gray-400">
+            <a href="https://wa.me/5543996761568" target="_blank"
+                class="hover:text-green-500 transition-transform hover:scale-110"
+                aria-label="Contato pelo WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/andregattermeyer" target="_blank"
+                class="hover:text-blue-500 transition-transform hover:scale-110"
+                aria-label="Perfil profissional no LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/andregattdev" target="_blank"
+                class="hover:text-white transition-transform hover:scale-110"
+                aria-label="Repositórios no GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:andregatt.dev@gmail.com" 
+                class="hover:text-indigo-500 transition-transform hover:scale-110"
+                aria-label="Enviar um e-mail">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p class="text-gray-600 text-xs uppercase tracking-widest px-6">© 2025 • André Gattermeyer • Desenvolvedor
+            Fullstack</p>
+    </footer>
+
+    <a href="https://wa.me/5543996761568" target="_blank" class="whatsapp-float" aria-label="Me chame no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Me chame no WhatsApp!</span>
+    </a>
+
+    <div id="gallery-modal"
+        class="hidden fixed inset-0 z-[200] bg-black/95 flex items-center justify-center p-4 backdrop-blur-sm">
+        <button onclick="closeGallery()"
+            class="absolute top-6 right-6 text-white text-4xl hover:text-gray-400 transition" aria-label="Fechar galeria">&times;</button>
+
+        <button onclick="prevImg()"
+            class="absolute left-4 text-white text-4xl p-4 hover:bg-white/10 rounded-full transition" aria-label="Imagem anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="max-w-5xl w-full flex justify-center">
+            <img id="gallery-img" src=""
+                class="max-h-[85vh] max-w-full rounded-lg shadow-2xl border border-gray-800 object-contain">
+        </div>
+
+        <button onclick="nextImg()"
+            class="absolute right-4 text-white text-4xl p-4 hover:bg-white/10 rounded-full transition" aria-label="Próxima imagem">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

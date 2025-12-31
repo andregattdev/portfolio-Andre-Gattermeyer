@@ -1,0 +1,117 @@
+/* Globais */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Menu Mobile Animações */
+#mobile-menu.hidden {
+    display: none;
+}
+
+#mobile-menu.active {
+    display: block;
+    transform: scale(100%);
+    opacity: 1;
+}
+
+/* Efeito de link no mobile */
+.mobile-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.mobile-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #6366f1;
+    transition: width 0.3s ease;
+}
+
+.mobile-link:hover::after {
+    width: 100%;
+}
+
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    animation: pulse-green 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+    animation: none;
+}
+
+/* Tooltip (balão de texto) que aparece no hover */
+.whatsapp-float .tooltip {
+    position: absolute;
+    right: 75px;
+    background-color: #1f2937;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    border: 1px border-gray-700;
+}
+
+.whatsapp-float:hover .tooltip {
+    opacity: 1;
+}
+
+/* Animação de pulso */
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Scrollbar Customizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4f46e5;
+    border-radius: 10px;
+}
+
+/* Modaal da galeria */
+#gallery-modal:not(.hidden) {
+    display: flex; /* Garante que o flex funcione quando não estiver hidden */
+}
+
+#gallery-img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#gallery-img.loaded {
+    opacity: 1;
+}
